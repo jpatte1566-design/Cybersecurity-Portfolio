@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | JP Cybersecurity Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JP | Cybersecurity Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="interests.html">Interests</a>
+        <a href="donate.html">Donate</a>
+    </nav>
+
+    <main>
+        <section class="resume-section">
+            <h2>Support My Journey</h2>
+            <p>
+                Thank you for visiting my portfolio!
+                This page demonstrates an HTML5 donation form
+                created for my Web Development course.
+                No real payments are processed.
+            </p>
+		
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <p>Title:</p>
+
+        <input type="radio" id="mr" name="title" value="Mr" required>
+        <label for="mr">Mr.</label>
+
+        <input type="radio" id="ms" name="title" value="Ms">
+        <label for="ms">Ms.</label>
+
+        <input type="radio" id="mx" name="title" value="Mx">
+        <label for="mx">Mx.</label>
+
+        <p>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </p>
+
+        <p>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </p>
+		
+<p>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+</p>
+
+<p>
+    <label for="donation-date">Date:</label>
+    <input type="date" id="donation-date" name="donation-date" required>
+</p>
+
+<p>
+    <label for="phone-type">Phone Type:</label>
+    <select id="phone-type" name="phone-type" required>
+        <option value="">Select Phone Type</option>
+        <option value="mobile">Mobile</option>
+        <option value="home">Home</option>
+        <option value="work">Work</option>
+    </select>
+</p>
+
+<p>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="123-456-7890"
+           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+           title="Enter phone number as 123-456-7890"
+           required>
+</p>
+
+    </fieldset>
+	
+<fieldset>
+    <legend>Donation &amp; Payment Information</legend>
+
+    <p>
+        <label for="price">Donation Amount ($):</label>
+        <input type="number" id="price" name="price"
+               min="1" step="0.01" required>
+    </p>
+
+    <p>
+        <label for="card-number">Credit Card Number:</label>
+        <input type="text" id="card-number" name="card-number"
+               inputmode="numeric"
+               pattern="[0-9]{13,19}"
+               maxlength="19"
+               placeholder="Enter test card number"
+               autocomplete="off" required>
+    </p>
+
+    <p>
+        <label for="security-code">Security Code (CVV):</label>
+        <input type="text" id="security-code" name="security-code"
+               inputmode="numeric"
+               pattern="[0-9]{3,4}"
+               maxlength="4"
+               placeholder="3 or 4 digits"
+               autocomplete="off" required>
+    </p>
+</fieldset>
+
+<p>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">
+        I agree to the Terms and Conditions.
+    </label>
+</p>
+
+<p>
+    <button type="submit">Submit Donation</button>
+    <button type="reset">Clear Form</button>
+</p>
+
+</form>
+	
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jonathan Patterson</p>
+    </footer>
+
+</body>
+</html>
